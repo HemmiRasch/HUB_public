@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung – HUB</title>
+  <style>
+    :root { --text: #1d1d22; --muted: #5b5b66; --bg: #ffffff; --line: #e3e3ea; --accent: #4a55c2; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #e8e8ee; --muted: #a2a2ae; --bg: #131318; --line: #2c2c36; --accent: #9aa3ff; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2em; }
+    h2 { font-size: 1.2rem; margin-top: 2em; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    .muted { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+    a { color: var(--accent); }
+    .box { border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung für die App „HUB“</h1>
+  <p class="muted">Stand: 18. November 2026 · App-ID: de.raschshub.de</p>
+
+  <div class="box">
+    <strong>Kurz gesagt:</strong> HUB verbindet dein Smartphone mit deinem <em>eigenen</em> PC
+    (dem „Hub“), den du selbst betreibst. Deine Notizen, Sprachaufnahmen, Fotos und Musik
+    werden nur zwischen deinem Smartphone und deinem PC übertragen – verschlüsselt. Wir als
+    Anbieter der App betreiben dafür keine Server und erhalten keine dieser Daten. Es gibt
+    keine Werbung, kein Tracking und keine Analyse-Werkzeuge.
+  </div>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Raphael Petras<br>
+    Wasserklinge 8<br>
+    74182 Obersulm, Deutschland<br>
+    E-Mail: <a href="mailto:raphaelpetras98@gmail.com">raphaelpetras98@gmail.com</a>
+  </p>
+  <p>Für die Daten auf deinem eigenen PC bist du als Betreiber des Hubs selbst verantwortlich.
+  Wir haben auf diesen PC und die dort gespeicherten Daten keinen Zugriff.</p>
+
+  <h2>2. Wie HUB funktioniert</h2>
+  <p>Die App ist eine Oberfläche für Module (z. B. Notizen, Musik, Sprachnotizen). Die Daten
+  dieser Module liegen auf dem Smartphone und auf deinem PC, auf dem die frei verfügbare
+  Software „HUB“ läuft. Smartphone und PC werden einmalig per QR-Code gekoppelt. Die Verbindung
+  läuft entweder direkt in deinem Heimnetz oder – wenn du das selbst einrichtest – über das
+  VPN-Netz des Dienstes Tailscale (siehe Abschnitt 6).</p>
+
+  <h2>3. Welche Daten verarbeitet werden</h2>
+  <table>
+    <tr><th>Daten</th><th>Wann</th><th>Wohin</th></tr>
+    <tr><td>Gerätemodell (z. B. „Samsung SM-S931B“)</td><td>einmalig beim Koppeln</td>
+      <td>an deinen PC, um das Gerät in der Geräteliste anzuzeigen</td></tr>
+    <tr><td>Notizen und darin eingefügte Bilder</td><td>wenn du das Modul „Notizen“ nutzt</td>
+      <td>auf dem Smartphone und als Dateien auf deinem PC</td></tr>
+    <tr><td>Sprachaufnahmen und daraus erzeugter Text</td><td>nur wenn du im Modul „Sprachnotizen“ eine Aufnahme startest</td>
+      <td>an deinen PC, der sie dort mit Spracherkennung und einem lokalen KI-Modell verarbeitet</td></tr>
+    <tr><td>Musik, Cover, Playlists</td><td>wenn du das Modul „Musik“ nutzt</td>
+      <td>von deinem PC auf das Smartphone (Streaming oder Download); Playlists auf deinem PC</td></tr>
+    <tr><td>Einstellungen und Daten einzelner Module</td><td>bei der Nutzung</td>
+      <td>nur auf dem Smartphone</td></tr>
+  </table>
+  <p>Die Spracherkennung (Whisper) und das KI-Sprachmodell laufen <strong>auf deinem PC</strong>.
+  Aufnahmen und Texte werden dafür nicht an Cloud-Dienste gesendet.</p>
+
+  <h2>4. Berechtigungen der App</h2>
+  <table>
+    <tr><th>Berechtigung</th><th>Wofür</th></tr>
+    <tr><td>Kamera</td><td>Nur zum Scannen des QR-Codes beim Koppeln. Das Kamerabild wird auf dem Gerät ausgewertet und nicht gespeichert oder übertragen.</td></tr>
+    <tr><td>Mikrofon</td><td>Nur für Sprachaufnahmen, die du selbst startest, und nur solange das Modul geöffnet ist.</td></tr>
+    <tr><td>Fotos/Dateien (Auswahl-Dialog)</td><td>Nur die Bilder, die du selbst auswählst, um sie in eine Notiz einzufügen.</td></tr>
+    <tr><td>Internet / Netzwerkstatus</td><td>Verbindung zu deinem PC; Erkennen von WLAN oder Mobilfunk (im Mobilfunk wird Musik datensparend übertragen).</td></tr>
+    <tr><td>Wiedergabe im Hintergrund</td><td>Damit Musik weiterläuft, wenn du die App verlässt, mit Steuerung über Benachrichtigung, Sperrbildschirm und Bluetooth.</td></tr>
+  </table>
+  <p>Jedes Modul bekommt nur die Rechte, denen du bei der Installation zugestimmt hast.
+  Du kannst sie in der App unter „Rechte“ jederzeit wieder entziehen.</p>
+
+  <h2>5. Sicherheit</h2>
+  <ul>
+    <li>Alle Verbindungen zwischen App und PC sind mit TLS verschlüsselt. Die App akzeptiert dabei
+      nur das Zertifikat deines eigenen PCs (Zertifikat-Pinning).</li>
+    <li>Der Zugangsschlüssel zu deinem PC wird auf dem Smartphone mit dem Android Keystore verschlüsselt gespeichert.</li>
+    <li>Module laufen voneinander getrennt. Programmteile von Modulen auf dem PC laufen in einer abgeschotteten Umgebung.</li>
+  </ul>
+
+  <h2>6. Dienste anderer Anbieter</h2>
+  <ul>
+    <li><strong>Google Play:</strong> Beim Herunterladen und Aktualisieren der App verarbeitet Google
+      Daten nach den eigenen Datenschutzbestimmungen von Google. Google stellt uns außerdem
+      zusammengefasste, nicht personenbezogene Statistiken und Absturzberichte zur Verfügung.</li>
+    <li><strong>Google ML Kit (QR-Code-Erkennung):</strong> Die Erkennung des QR-Codes läuft auf dem
+      Gerät. ML Kit kann dabei technische Nutzungs- und Leistungsdaten (z. B. Geräte- und App-Informationen,
+      Laufzeiten) an Google übermitteln. Bild- oder Inhaltsdaten werden dabei nicht übertragen.
+      Weitere Informationen: <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a></li>
+    <li><strong>Tailscale (optional):</strong> Wenn du für den Zugriff von unterwegs Tailscale verwendest,
+      laufen die – weiterhin Ende-zu-Ende-verschlüsselten – Verbindungen über das Netz von Tailscale Inc.
+      Dafür gelten deren Bestimmungen: <a href="https://tailscale.com/privacy-policy">tailscale.com/privacy-policy</a></li>
+  </ul>
+  <p>Darüber hinaus werden keine Daten an Dritte weitergegeben, verkauft oder für Werbung genutzt.</p>
+
+  <h2>7. Speicherdauer und Löschen</h2>
+  <ul>
+    <li><strong>Auf dem Smartphone:</strong> Daten bleiben gespeichert, bis du ein Modul entfernst
+      (dann werden dessen Daten gelöscht), die Kopplung aufhebst oder die App deinstallierst.</li>
+    <li><strong>Auf deinem PC:</strong> Notizen, Playlists und Aufnahmen bleiben, bis du sie löschst –
+      in der App, in der Admin-Oberfläche des Hubs oder direkt im Datenordner. Audiodateien von
+      Sprachaufnahmen löscht der Hub standardmäßig nach 30 Tagen automatisch, die Texte bleiben.
+      Der Hub legt wöchentliche Sicherungen an und behält die letzten vier.</li>
+    <li>Da wir selbst keine Daten erhalten, gibt es bei uns kein Konto und nichts zu löschen.</li>
+  </ul>
+
+  <h2>8. Deine Rechte</h2>
+  <p>Du hast nach der Datenschutz-Grundverordnung (DSGVO) das Recht auf Auskunft, Berichtigung,
+  Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da die Daten
+  auf deinen eigenen Geräten liegen, kannst du diese Rechte dort unmittelbar selbst ausüben.
+  Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse. Außerdem kannst du dich
+  bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+
+  <h2>9. Kinder</h2>
+  <p>Die App richtet sich nicht an Kinder unter 13 Jahren.</p>
+
+  <h2>10. Änderungen</h2>
+  <p>Wenn neue Funktionen hinzukommen, die andere Daten verarbeiten, passen wir diese
+  Datenschutzerklärung an. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+</main>
+</body>
+</html>
